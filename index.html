@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Management System 📚</h2>
+        
+        <form id="student-form">
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="fee" placeholder="student fee"  >
+            <input type="date" id="Date" placeholder="starting Date" required>
+            <button type="submit" id="submit-btn">Add Student</button>
+        </form>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>fee</th>
+                        <th> Joining Date</th>
+                        <th>Actions</th>
+
+                        
+
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <!-- Data will be injected here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
